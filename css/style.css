@@ -1,0 +1,132 @@
+*{
+    font-family: 'Cairo', sans-serif;
+}
+/*upper nave*/
+.up-nav{
+    background-color: #2d3e50;
+    width: 100%;
+    padding: 8px 0;
+}
+.lan{
+    text-decoration: none;
+    color: #485b71;
+    margin: 0 3px;
+}
+.lanA{
+    border-left: 1.5px #485b71 solid;
+}
+a.lanA:link, a.lanA:visited{
+    color:#b32831;
+}
+.social>a>i{
+    color: #d5d7dd;
+    font-size: 22px;
+    margin: 3px 10px;
+}
+.social{
+    text-align: center;
+}
+.contact a{
+    color: #d5d7dd;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+/*nav par*/
+.nav-link{
+    font-size: 18px;
+}
+
+.nav-item{
+    padding: 5px;
+}
+.nav-item.active>.nav-link{
+    color: #e41c25 !important;
+}
+.nav-item.active::after {
+    content: '';
+    display: block;
+    width: 95%;
+    height: 3px;
+    background-color: #eb1d29;
+    position: relative;
+    top: 20px;
+}
+.nav-item:hover:after{
+    content: '';
+    display: block;
+    width: 95%;
+    height: 3px;
+    background-color: #eb1d29;
+    position: relative;
+    top: 20px;
+}
+.nav-btn{
+    background-color: #2d3e50;
+    border: none;
+    color:#d5d7dd ;
+    margin-right: 20px;
+    width: 100px;
+    height: 40px;
+}
+button.navbar-toggler:focus{
+    outline: none ;
+}
+
+/* header*/
+.header{
+    background-image: url(../imgs/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-text{
+    width: 30%;
+    margin:10%;
+}
+@media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .header{
+        background-image: url(../imgs/BG1.jpg);
+    }
+    .carousel-text{
+        width: auto;
+    }
+  }
+.carousel-text h2{
+    color: #a80f14;
+    margin-bottom: 40px;
+}
+.carousel-text p{
+    line-height: 50px;
+    font-size: 120%;
+}
+.carousel .carousel-indicators li {
+    width: 15px;
+   height: 15px;
+   border-radius: 100%;
+ }
+.header-btn{
+    background-color: #2d3e50;
+    color:#d5d7dd ;
+    border: solid white 2px;
+    margin-right: 20px;
+    width: 180px;
+    height: 50px;       
+}
+
+/*about*/
+.about{
+    background-image: url(../imgs/about.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+}
+.about-p{
+    line-height: 40px;
+    font-size: 23px;
+    text-align: center;
+}
+.about-p span{
+    color:#a60f14 ;
+}
