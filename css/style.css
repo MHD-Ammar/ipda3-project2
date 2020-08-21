@@ -32,6 +32,11 @@ a.lanA:link, a.lanA:visited{
     font-size: 18px;
     margin-left: 10px;
 }
+@media (max-width: 700px){
+    .social{
+        text-align:right !important
+    }
+}
 /*nav par*/
 .nav-link{
     font-size: 18px;
@@ -128,5 +133,58 @@ button.navbar-toggler:focus{
     text-align: center;
 }
 .about-p span{
+    color:c ;
+}
+
+/*articles*/
+.articles{
+    background-color: #fbfbfb;
+    padding: 50px 0;
+}
+.card-title{
     color:#a60f14 ;
+}
+.card{
+    margin: 10px;
+}
+.card-img-top{
+    width: auto !important;
+    margin: 3px;
+}
+.articles-h2{
+    display: inline-block;
+    padding:0 20px;
+    color:#a60f14 ;
+}
+.articles hr{
+    margin-top: 0;
+}
+
+.articles-h2::after {
+    content: '';
+    display: block;
+    width: 120%;
+    height: 2px;
+    background-color:#a60f14;
+    position: relative;
+    top: 10px;
+}
+.owl-nav{
+    font-size: 50px;
+    color:#b5b5b5;
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+.owl-prev{
+    margin-left: 10px ;
+}
+.owl-next{
+    margin-right: 10px;
+}
+.owl-next:focus{
+    outline: none;
+}
+.owl-prev:focus{
+    outline: none;
 }
