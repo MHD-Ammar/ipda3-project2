@@ -15,42 +15,41 @@
 </head>
 
 <body>
-    <section class="nav-bar">
-        <div class="up-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="" class="lan lanA">
-                            <span>عربي</span>
-                        </a>
-                        <a href="" class="lan lanE">
-                            <span>EN</span>
-                        </a>
-                    </div>
-                    <div class="col-md-4 social">
+    <section class="up-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-5">
+                    <a href="" class="lan lanA">
+                        <span>عربي</span>
+                    </a>
+                    <a href="" class="lan lanE">
+                        <span>EN</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-7 social">
 
-                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
-                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
-                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
-                        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></i></a>
-                    </div>
-                    <div class="col-md-4 contact" dir="ltr">
-                        <a href="" class="border-left">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <span>+966506954964</span>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <span>name@name.com</span>
-                        </a>
-                    </div>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                    <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></i></a>
+                </div>
+                <div class="col-md-4 contact" dir="ltr">
+                    <a href="" class="border-left">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>+966506954964</span>
+                    </a>
+                    <a href="">
+                        <i class="fa fa-envelope" aria-hidden="true">
+                            <span>name@name.com</span></i>
+                    </a>
                 </div>
             </div>
         </div>
-
+    </section>
+    <section class="lower-nav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0;">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt=""></a>
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,10 +58,10 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class=" navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"> الرئيسية</a>
+                            <a class="nav-link" href="index.html"> الرئيسية</a>
                         </li>
                         <li class="nav-item border-left">
-                            <a class="nav-link" href="#">عن بنك الدم</a>
+                            <a class="nav-link" href="index.html#about">عن بنك الدم</a>
                         </li>
                         <li class="nav-item border-left">
                             <a class="nav-link" href="#">مقالات</a>
@@ -79,7 +78,7 @@
 
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <a href="" style="color: #2d3e50; text-decoration: underline;">إنشاء حساب جديد</a>
+                        <a href="pages/new-account-ar.html" style="color: #2d3e50; text-decoration: underline;">إنشاء حساب جديد</a>
                         <button class="btn btn-outline-success my-2 my-sm-0 nav-btn" type="submit">الدخول</button>
                     </form>
                 </div>
@@ -137,11 +136,11 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6 col-12">
                     <p class="about-p"> <span> بنك الدم </span>ريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على
                         العميل ليتصور طريقه وضع النصوص بالتصاميم
                         سواء كانت
@@ -228,14 +227,262 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!--orders-->
+    <section class="orders">
+        <div class="orders-header">
+            <h2>طلبات التبرع</h2>
+            <hr>
+        </div>
+        <form>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button type="button" class="btn btn-outline-secondary">اختر فصيلة الدم</button>
+                                <button type="button"
+                                    class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">B+</a>
+                                    <a class="dropdown-item" href="#">A+</a>
+                                    <a class="dropdown-item" href="#">AB</a>
+                                    <a class="dropdown-item" href="#">AB+</a>
+                                    <a class="dropdown-item" href="#">O</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button type="button" class="btn btn-outline-secondary">اختر فصيلة الدم</button>
+                                <button type="button"
+                                    class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">B+</a>
+                                    <a class="dropdown-item" href="#">A+</a>
+                                    <a class="dropdown-item" href="#">AB</a>
+                                    <a class="dropdown-item" href="#">AB+</a>
+                                    <a class="dropdown-item" href="#">O</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <button type="button" class="btn btn-search"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+        </form>
+        <div class="container">
+            <div class="row the-order">
+                <div class="col-lg-2 the-order-blood">
+                    <div> <span>+B</span></div>
+                </div>
+                <div class="col-lg-3 col-5 info-lable">
+                    <h4>اسم الحالة:</h4>
+                    <h4>مستشفى: </h4>
+                    <h4>مدينة:</h4>
+                </div>
+                <div class="col-lg-4 col-7 info-lable">
+                    <h4> أحمد محمد أحمد</h4>
+                    <h4>القصر العيني</h4>
+                    <h4> المنصورة</h4>
+                </div>
+                <div class="col-lg-3 the-order-btn">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">التفاصيل</a>
+                </div>
+            </div>
 
+            <div class="row the-order">
+                <div class="col-lg-2 the-order-blood">
+                    <div> <span>+B</span></div>
+                </div>
+                <div class="col-lg-3 col-5 info-lable">
+                    <h4>اسم الحالة:</h4>
+                    <h4>مستشفى: </h4>
+                    <h4>مدينة:</h4>
+                </div>
+                <div class="col-lg-4 col-7 info-lable">
+                    <h4> أحمد محمد أحمد</h4>
+                    <h4>القصر العيني</h4>
+                    <h4> المنصورة</h4>
+                </div>
+                <div class="col-lg-3 the-order-btn">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">التفاصيل</a>
+                </div>
+            </div>
+            <div class="row the-order">
+                <div class="col-lg-2 the-order-blood">
+                    <div> <span>+B</span></div>
+                </div>
+                <div class="col-lg-3 col-5 info-lable">
+                    <h4>اسم الحالة:</h4>
+                    <h4>مستشفى: </h4>
+                    <h4>مدينة:</h4>
+                </div>
+                <div class="col-lg-4 col-7 info-lable">
+                    <h4> أحمد محمد أحمد</h4>
+                    <h4>القصر العيني</h4>
+                    <h4> المنصورة</h4>
+                </div>
+                <div class="col-lg-3 the-order-btn">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">التفاصيل</a>
+                </div>
+            </div>
+
+            <div class="row the-order">
+                <div class="col-lg-2 the-order-blood">
+                    <div> <span>+B</span></div>
+                </div>
+                <div class="col-lg-3 col-5 info-lable">
+                    <h4>اسم الحالة:</h4>
+                    <h4>مستشفى: </h4>
+                    <h4>مدينة:</h4>
+                </div>
+                <div class="col-lg-4 col-7 info-lable">
+                    <h4> أحمد محمد أحمد</h4>
+                    <h4>القصر العيني</h4>
+                    <h4> المنصورة</h4>
+                </div>
+                <div class="col-lg-3 the-order-btn">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">التفاصيل</a>
+                </div>
+            </div>
+
+            <div class="row the-order">
+                <div class="col-lg-2 the-order-blood">
+                    <div> <span>+B</span></div>
+                </div>
+                <div class="col-lg-3 col-5 info-lable">
+                    <h4>اسم الحالة:</h4>
+                    <h4>مستشفى: </h4>
+                    <h4>مدينة:</h4>
+                </div>
+                <div class="col-lg-4 col-7 info-lable">
+                    <h4> أحمد محمد أحمد</h4>
+                    <h4>القصر العيني</h4>
+                    <h4> المنصورة</h4>
+                </div>
+                <div class="col-lg-3 the-order-btn">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">التفاصيل</a>
+                </div>
+            </div>
+            <div class="row the-order-btn btn-more">
+                <a class="btn btn-primary btn-lg" href="#" role="button">التفاصيل</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 contact-us-info ">
+                    <h2 class="articles-h2">اتصل بنا</h2>
+                    <h4>يمكنك الاتصال بنا للاستفسار عن معلومة وسيتم الرد عليكم</h4>
+
+                    <div class="whatsapp">
+                        <a href="" dir="ltr">
+                            <h3>+002 1215454551</h3>
+                        </a>
+                        <img src="imgs/whats.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- app-->
+    <section class="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 app-info">
+                    <h3>تطبيق بنك الدم</h3>
+                    <p>
+                        ان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص
+                        مجموعة من الأحرف
+                    </p>
+                    <h3 class="text-center" style="margin-bottom: 20px;">متوفر على</h3>
+                    <div class="text-center">
+                        <a href="">
+                            <img src="imgs/google.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="imgs/ios.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-12">
+                    <img src="imgs/App.png" style="margin:40px 0; width: 100%;" alt="">
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!--footer-->
+    <section class="footer">
+        <div class="container">
+            <div class="row empty"></div>
+            <div class="row">
+                <div class="col-lg-4 footer-about">
+                    <img src="imgs/logo.png" alt="">
+                    <h3>بنك الدم</h3>
+                    <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال
+                        بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن
+                        تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص.</p>
+                </div>
+                <div class="col-lg-2 col-6 offset-lg-1 footer-nav">
+                    <a href="">الرئيسية</a>
+                    <a href="">عن بنك الدم</a>
+                    <a href="">المقالات</a>
+                    <a href="">طلبات التبرع</a>
+                    <a href="">من نحن</a>
+                    <a href="">اتصل بنا</a>
+                </div>
+                <div class="col-lg-3 col-6 offset-lg-2 apps">
+                    <h5>متوفر على</h5>
+                    <a href="">
+                        <img src="imgs/google1.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="imgs/ios1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--lower footer-->
+        <section class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 social footer-social">
+                        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                        <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></i></a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 copy-right">
+                        <p>
+                            جميع الحقوق محفوظة ل <span>بنك الدم</span> &copy 2019
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@^2.0.0"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
